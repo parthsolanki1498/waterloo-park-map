@@ -1,0 +1,78 @@
+.parks-nav-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 238px;
+    height: 100%;
+    z-index: 1000;
+    overflow-y: auto;
+    background-color: #1e272e;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    transition: width 0.3s;
+  }
+  
+  .parks-nav {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    color: #000000;
+  }
+  
+  .nav-title {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #000000;
+    font-weight: bold;
+  }
+  
+  .nav-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-item {
+    padding: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+  }
+  
+  .nav-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    transition: left 0.3s ease;
+    z-index: -1;
+  }
+  
+  .nav-item:hover::before {
+    left: 0;
+  }
+  
+  .nav-item:hover {
+    background-color: #34495e;
+    transform: translateX(10px);
+  }
+  
+  .nav-item:active {
+    background-color: #1abc9c;
+    transform: translateX(15px);
+  }
+  
+  .nav-item.selected {
+    background-color: #1abc9c;
+    color: #000000;
+  }
+  

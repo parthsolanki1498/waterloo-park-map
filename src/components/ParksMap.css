@@ -1,0 +1,66 @@
+.leaflet-container {
+  height: 100vh;
+  width: 100%;
+}
+
+/* Custom styles for the Popup */
+.leaflet-popup-content-wrapper {
+  background-color: rgba(255, 255, 255, 0.7); /* Set background color to transparent */
+  border: none; /* Remove the border */
+  border-radius: 10px; /* Add border radius for rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+  animation: fadeIn 0.3s ease-in-out; /* Apply fade-in animation */
+}
+
+.popup-content {
+  padding: 15px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  color: #333333;
+}
+
+.popup-content h3 {
+  margin-top: 0;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.info span {
+  margin-right: 10px;
+}
+
+/* Style the icons */
+.info svg {
+  width: 20px;
+  height: 20px;
+  fill: #555555;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px); /* Move Popup up slightly */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Move Popup back to its original position */
+  }
+}
+
+.leaflet-popup-content {
+  color: #333; /* Set text color */
+  padding: 10px; /* Add padding */
+}
+
+.leaflet-popup-content h3 {
+  margin-top: 0; /* Remove top margin for the heading */
+}
+
+
+
+

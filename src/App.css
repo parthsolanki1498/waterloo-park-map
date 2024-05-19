@@ -1,38 +1,62 @@
 .App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+
+.App-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px; /* Adjust the height as needed */
+  z-index: 1000;
+  background-color: #046b32;
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  padding: 10px 20px;
+  color: white; /* Text color */
+  font-size: 1.5rem; /* Font size */
+}
+
+.App-main {
+  display: flex;
+  flex: 1 1 auto;
+  overflow: hidden;
+}
+
+.parks-nav {
+  width: 200px;
+  background: #f4f4f4;
+  padding: 10px;
+  overflow-y: auto;
+  height: 100%;
+}
+
+.parks-nav h2 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.parks-nav ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.parks-nav li {
+  padding: 8px;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.parks-nav li:hover {
+  background: #ddd;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.map-container {
+  flex: 1 1 auto;
+  height: 100%;
+  width: calc(100% - 200px);
 }

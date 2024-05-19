@@ -1,0 +1,34 @@
+.nearest-park-finder {
+    position: relative;
+    padding: 10px;
+  }
+  
+  .nearest-park-finder h5 {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  
+  .input-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .postal-code-input {
+    padding: 5px;
+    margin-right: 10px;
+    flex-grow: 1;
+    box-sizing: border-box;
+  }
+  
+  .nearest-park-button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .nearest-park-button:hover {
+    background-color: #45a049;
+  }
+  
